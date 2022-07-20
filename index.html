@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Yard - Sale</title>
+    <style>
+
+        /*Variables para los colores y los tamaños*/
+        :root {
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #ACD9B2;
+            --text-input-field: #F7F7F7;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        } 
+
+        /*Seleccionamos la fuente*/
+        body {
+            margin: 0;
+            font-family: 'Quicksand' , sans-serif;
+        }
+
+        .menuMobile {
+            padding: 26px;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .menuMobile a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: bold;
+        }
+
+        .list {
+            padding: 0;
+            list-style: none;
+        }
+        
+        .list li {
+            margin-bottom: 34px;
+        }
+
+        .list .email {
+            font-size: var(--sm);
+            font-weight: 300;
+        }
+
+        .list .liEmail {
+            margin-bottom: 4px;
+        }
+
+        .menuMobile .primaryList {
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+
+        .sign {
+            font-size: var(--sm);
+            color: var(--hospital-green) !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menuMobile">
+        <ul class="primaryList list">
+            <li>
+                <a href="/">CATEGORIES</a>
+            </li>
+
+            <li class="">
+                <a href="/">All</a>
+            </li>
+
+            <li>
+                <a href="/">Clothes</a>
+            </li>
+
+            <li>
+                <a href="/">Electronics</a>
+            </li>
+
+            <li>
+                <a href="/">Funitures</a>
+            </li>
+
+            <li>
+                <a href="/">Toys</a>
+            </li>
+
+            <li>
+                <a href="/">Others</a>
+            </li>
+        </ul>
+        
+        <ul class="secundaryList list">
+            <li class="one">
+                <a class="orders" href="/">My orders</a>
+            </li>
+
+            <li class="two">
+                <a class="account" href="/">My account</a>
+            </li>
+        </ul>
+
+        <ul class="tertiaryList list">
+            <li class="liEmail">
+                <a class="email" href="/">cronos@example.com</a>
+            </li>
+
+            <li class="three">
+                <a class="sign" href="/">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
