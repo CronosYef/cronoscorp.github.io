@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>My - order</title>
+    <style>
+        /*Variables para los colores y los tamaños*/
+        :root {
+            --very-light-pink: #C7C7C7;
+            --hospital-green: #ACD9B2;
+            --text-input-field: #F7F7F7;
+            --white: #FFFFFF;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        } 
+
+        /*Seleccionamos la fuente*/
+        body {
+            margin: 0;
+            font-family: 'Quicksand' , sans-serif;
+        }
+
+        .mainContainer {
+            --width--content: 300px;
+            --width--img: 85px;
+            width: 100%;
+            /*height: 100vh;*/
+            display: grid;
+            place-content: start center;
+        }
+
+        .title  {
+            display: none;
+            font-size: var(--lg);
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .orderContainer {
+            width: var(--width--content);
+            /*height: 100%;
+            display: grid;
+            grid-template-rows: auto 1fr auto; */
+        }
+
+        .myOrder {
+            box-sizing: border-box;
+            width: var(--width--content);
+            background-color: var(--text-input-field);   
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 16px 0 16px;
+            margin: 34px 0 0 0;
+        }
+
+        .myOrder p:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .myOrder p span:first-child {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .myOrder p:first-child span:last-child {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+
+        .itemsContainer {
+            margin-top: 16px;
+            width: var(--width--content);
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto 1fr auto;
+        }
+
+        .itemsContainer p:nth-child(2) {
+            color: var(--very-light-pink);
+            margin-left: 8px;
+            font-size: var(--sm);
+        }
+
+        .itemsContainer p:nth-child(3) {
+            font-weight: bold;
+        }
+
+        .itemsContainer figure{
+            margin: 0;
+        }
+
+        figure img {
+            width: var(--width--img);
+            height: var(--width--img);
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 600px) {
+
+            .mainContainer {
+                --width--content: 380px;
+                --width--img: 100px;
+            }
+
+            .title {
+                display: inline-block;
+                margin-top: 68px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="orderContainer">
+            <h1 class="title">My order</h1>
+            <div class="myOrder">
+                <p>
+                    <span>21.07.2022</span>
+                    <span>n articles</span>
+                </p>
+                <p>
+                    <span>$Total</span>
+                </p>
+            </div>
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful first item</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1207918/pexels-photo-1207918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/2646380/pexels-photo-2646380.jpeg?auto=compress&cs=tinysrgb&w=600" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?cs=srgb&dl=pexels-rafael-pires-943150.jpg&fm=jpg" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/269220/pexels-photo-269220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1207918/pexels-photo-1207918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/2646380/pexels-photo-2646380.jpeg?auto=compress&cs=tinysrgb&w=600" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?cs=srgb&dl=pexels-rafael-pires-943150.jpg&fm=jpg" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div>
+
+            <div class="itemsContainer">
+                <figure>
+                    <img src="https://images.pexels.com/photos/269220/pexels-photo-269220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="item to buy">
+                </figure>
+                <p>A beautiful thing to enjoy maybe with your family</p>
+                <p>$price</p>
+            </div> 
+        </div>
+    </div>
+</body>
+</html> 
